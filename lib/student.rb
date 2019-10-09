@@ -68,7 +68,7 @@ end
 
 def self.all_students_in_grade_9
     sql = <<-SQL
-      SELECT *
+      SELECT count(*)
       FROM students
       WHERE grade = 9;
     SQL
